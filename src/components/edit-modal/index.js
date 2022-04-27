@@ -6,7 +6,7 @@ const EditModal = (props) => {
   const system = {
     module: './editmodal',
     scope: 'editmodal',
-    url: `${process.env.BLOX_ENV_URL_edit_modal}/remoteEntry.js`,
+    url: `${process.env.BLOX_ENV_URL_edit_modal111}/remoteEntry.js`,
   };
 
   const { Component: FederatedComponent, errorLoading } = useFederatedComponent(
@@ -25,9 +25,9 @@ const EditModal = (props) => {
         : FederatedComponent &&
           props && (
             <FederatedComponent
-    candidateNewModal={candidateNewModal}
-    current={current}
-    handleCandidateNewModal={handleCandidateNewModal}
+              candidateNewModal={candidateNewModal}
+              current={current}
+              handleCandidateNewModal={handleCandidateNewModal}
             />
           )}
     </React.Suspense>
